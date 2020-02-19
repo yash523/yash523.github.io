@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 19</title>
+        <script>
+        window.onload=function(){
+            if(document.cookie.length==0)
+            { 
+                var v=1;
+                document.cookie="noofvisits="+v+"";
+                document.getElementById("numvisits").innerHTML=v;
+            }
+            else{
+                var numvalue=document.cookie.split("=");
+                numvalue[1]=numvalue[1]+1;
+                document.getElementById("numvisits").innerHTML=numvalue[1];
+                var 
+            }
+            
+        }
+        </script>
+    </head>
+    <body>
+        <img name="image1" src="images/joker1.png" width="400" height="550">
+        <div>
+            <h3>you have visited <div id="numvisits"></div> number of times.</h3>
+        </div>
+    </body>
+</html>
