@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Prevent The Ball
+        </title>
+        <style>
+            canvas {
+                display:inline-block;
+                border:1px solid #d3d3d3;
+                background-color: #f1f1f1;
+                margin: auto;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: large;
+                font-weight: 400;
+            }
+            #restartdiv{
+                background-color: #DEDADA;
+                height: 25px;
+                width: 60px;
+            }
+        </style>
+        <script src="game.js">
+        </script>
+    </head>
+    <body onload="startGame()"><br>
+        <div id="restartdiv"><a  id="restart" href="game.html">Restart</a></div><br>
+        Use keyboard arrow keys to prevent the ball from escaping!!
+        As the game proceeds precalulate the future motion of ball to survive<br>Challenge: REACH 25!!
+    </body>
+</html>
